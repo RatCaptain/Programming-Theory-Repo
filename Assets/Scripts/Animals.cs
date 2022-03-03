@@ -8,21 +8,7 @@ public class Animals : MonoBehaviour
     private Rigidbody animalRB;
     public float jumpForce;
     private string m_animalName;
-    public string animalName
-    {
-        get{return m_animalName;}
-        set
-        {
-            if (m_animalName.Length > 10)
-            {
-                Debug.Log("you can't set the name longer than 10 character");
-            }
-            else
-            {
-                m_animalName = value;
-            }
-        }
-    }
+    
     private void Start()
     {
         animalRB = gameObject.GetComponent<Rigidbody>();
